@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
+import OrderButton from './components/OrderButton'
+import { menus } from './lib/mock'
 
 /**
  * React App
@@ -9,6 +11,10 @@ import './App.css'
 function App() {
   return (
     <div className="App">
+      {menus.map((menu) => (
+        <OrderButton menu={menu} />
+      ))}
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

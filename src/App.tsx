@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import OrderButton from './components/OrderButton'
 import { menus } from './lib/mock'
@@ -12,23 +11,14 @@ function App() {
   return (
     <div className="App">
       {menus.map((menu) => (
-        <OrderButton menu={menu} />
+        <div className={'my-8 mx-8'}>
+          <OrderButton menu={menu} key={menu.id} />
+        </div>
       ))}
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   )
 }

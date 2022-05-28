@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from '../lib/types/menu'
 import { getTotalAmount, getTotalProducts } from '../lib/bill-board'
-import './BillBoard.scss'
+import style from './BillBoard.module.scss'
 
 type Props = {
   menus: Menu[]
@@ -9,11 +9,11 @@ type Props = {
 
 const BillBoard = ({ menus }: Props) => {
   return (
-    <div className="container">
-      <span className="title"> お会計</span>
+    <div className={style.container}>
+      <span className={style.title}> お会計</span>
 
-      <span className="amount">商品数：{getTotalProducts(menus)} 個</span>
-      <span className="amount">合計金額：{getTotalAmount(menus)} 円</span>
+      <span className={style.amount}>商品数：{getTotalProducts(menus)} 個</span>
+      <span className={style.amount}>合計金額：{getTotalAmount(menus)} 円</span>
     </div>
   )
 }

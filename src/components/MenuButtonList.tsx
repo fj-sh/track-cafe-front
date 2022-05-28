@@ -12,7 +12,9 @@ const MenuButtonList = ({ menus, updateMenus }: Props) => {
   return (
     <>
       {menus.map((menu) => (
-        <OrderButton menu={menu} key={menu.id} updateMenus={updateMenus} />
+        <div className="mx-10 my-10">
+          <OrderButton menu={menu} key={menu.id} updateMenus={updateMenus} />
+        </div>
       ))}
     </>
   )

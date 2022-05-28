@@ -1,9 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import { it } from 'vitest'
+import { render } from '@testing-library/react'
+import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('Vitest を動かしてみる', () => {
+  it('console.log', (ctx) => {
+    console.log(ctx.meta.name)
+  })
+  it('正しくレンダリングされること', () => {
+    const { container } = render(<App />)
+    expect(container.firstChild).toMatchSnapshot()
+  })
+})

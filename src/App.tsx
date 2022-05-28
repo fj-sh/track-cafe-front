@@ -3,6 +3,7 @@ import './App.css'
 import { menuData } from './lib/mocks/menu-data'
 import MenuButtonList from './components/MenuButtonList'
 import { Menu } from './lib/types/menu'
+import BillBoard from './components/BillBoard'
 
 /**
  * React App
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <MenuButtonList menus={menus} updateMenus={updateMenus} />
+      <BillBoard menus={menus} />
     </div>
   )
 }

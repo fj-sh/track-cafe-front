@@ -1,9 +1,9 @@
 import { Menu } from '../types/menu'
 
 export const menuData: Menu[] = [
-  { id: 1, name: 'コーヒー', price: 480, numberOfOrders: 2 },
-  { id: 2, name: '紅茶', price: 280, numberOfOrders: 3 },
-  { id: 3, name: 'ミルク', price: 180, numberOfOrders: 4 },
-  { id: 4, name: 'コーラ', price: 190, numberOfOrders: 1 },
-  { id: 5, name: 'ビール', price: 580, numberOfOrders: 0 },
+  { id: 'coffee', name: 'コーヒー', price: 480, numberOfOrders: 0 },
+  { id: 'tea', name: '紅茶', price: 280, numberOfOrders: 0 },
+  { id: 'milk', name: 'ミルク', price: 180, numberOfOrders: 0 },
+  { id: 'coke', name: 'コーラ', price: 190, numberOfOrders: 0 },
+  { id: 'beer', name: 'ビール', price: 580, numberOfOrders: 0 },
 ]

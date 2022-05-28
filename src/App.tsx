@@ -1,28 +1,27 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useState } from 'react'
 import './App.css'
+import { menuData } from './lib/mocks/menu-data'
+import MenuButtonList from './components/MenuButtonList'
+import { Menu } from './lib/types/menu'
 
 /**
  * React App
  * @constructor
  */
 function App() {
+  const [menus, setMenus] = useState(menuData)
+  const updateMenus = (targetMenu: Menu) => {
+    const updatedMenus = menus.map((menu) => {
+      if (menu.id === targetMenu.id) {
+        return { ...menu, numberOfOrders: menu.numberOfOrders + 1 }
+      }
+      return menu
+    })
+    setMenus(updatedMenus)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuButtonList menus={menus} updateMenus={updateMenus} />
     </div>
   )
 }

@@ -1,0 +1,48 @@
+.order-button {
+  width: 300px;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #262626;
+  padding: 15px 30px;
+  color: #101010;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover {
+    transform: scale(1.03);
+    background: rgba(0,0,0,.13);
+    box-shadow: 0 2px 20px rgba(0,0,0,.15);
+  }
+
+  &:active {
+    transform: scale(.96);
+
+    .badge {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  border-radius: 50%;
+  color: #f5f5f5;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  background: #f8011a;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: center;
+  top: -15px;
+  right: -15px;
+  transition: all .3s;
+}

@@ -8,8 +8,9 @@ npm run start
 
 ## デプロイ
 
-Vercel にデプロイします。
+main ブランチにマージされたタイミングで Vercel にデプロイされます。
 
+[動作確認用URL](https://track-cafe-front.vercel.app/)
 
 # Getting Started with Create React App
 

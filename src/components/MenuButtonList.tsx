@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu } from '../lib/types/menu'
 import OrderButton from './MenuButton'
+import style from './MenuButtonList.module.scss'
 
 type Props = {
   menus: Menu[]
@@ -12,7 +13,7 @@ const MenuButtonList = ({ menus, updateMenus }: Props) => {
   return (
     <>
       {menus.map((menu) => (
-        <div className="mx-10 my-10">
+        <div className={style.menuButtonList}>
           <OrderButton menu={menu} key={menu.id} updateMenus={updateMenus} />
         </div>
       ))}

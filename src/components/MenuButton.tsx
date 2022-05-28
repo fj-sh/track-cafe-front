@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu } from '../lib/types/menu'
-import './MenuButton.scss'
+import style from './MenuButton.module.scss'
 
 type Props = {
   menu: Menu
@@ -13,12 +13,12 @@ const MenuButton = ({ menu, updateMenus }: Props) => {
   }
   return (
     <>
-      <div className="order-button" onClick={onClick}>
-        <div className="menu">
-          <span className="menu-name">{menu.name}</span>
-          <span className="menu-price">{menu.price} 円</span>
+      <div className={style.orderButton} onClick={onClick}>
+        <div className={style.menu}>
+          <span className="">{menu.name}</span>
+          <span className="">{menu.price} 円</span>
         </div>
-        <span className="badge">{menu.numberOfOrders}</span>
+        <span className={style.badge}>{menu.numberOfOrders}</span>
       </div>
     </>
   )

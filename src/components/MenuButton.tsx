@@ -13,12 +13,14 @@ const MenuButton = ({ menu, updateMenus }: Props) => {
   }
   return (
     <>
-      <div className={style.orderButton} onClick={onClick}>
+      <div className={style.menuButton} onClick={onClick} data-testid="menuButton">
         <div className={style.menu}>
           <span className="">{menu.name}</span>
           <span className="">{menu.price} 円</span>
         </div>
-        <span className={style.badge}>{menu.numberOfOrders}</span>
+        <span className={style.badge} data-testid="badge">
+          {menu.numberOfOrders}
+        </span>
       </div>
     </>
   )

@@ -12,10 +12,11 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
         class="_menuButtonList_171v5_1"
       >
         <div
-          class="_orderButton_1n78s_1"
+          class="_menuButton_fdi0z_1"
+          data-testid="menuButton"
         >
           <div
-            class="_menu_1n78s_25"
+            class="_menu_fdi0z_1"
           >
             <span
               class=""
@@ -30,7 +31,8 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
             </span>
           </div>
           <span
-            class="_badge_1n78s_21"
+            class="_badge_fdi0z_21"
+            data-testid="badge"
           >
             0
           </span>
@@ -40,10 +42,11 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
         class="_menuButtonList_171v5_1"
       >
         <div
-          class="_orderButton_1n78s_1"
+          class="_menuButton_fdi0z_1"
+          data-testid="menuButton"
         >
           <div
-            class="_menu_1n78s_25"
+            class="_menu_fdi0z_1"
           >
             <span
               class=""
@@ -58,7 +61,8 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
             </span>
           </div>
           <span
-            class="_badge_1n78s_21"
+            class="_badge_fdi0z_21"
+            data-testid="badge"
           >
             0
           </span>
@@ -68,10 +72,11 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
         class="_menuButtonList_171v5_1"
       >
         <div
-          class="_orderButton_1n78s_1"
+          class="_menuButton_fdi0z_1"
+          data-testid="menuButton"
         >
           <div
-            class="_menu_1n78s_25"
+            class="_menu_fdi0z_1"
           >
             <span
               class=""
@@ -86,7 +91,8 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
             </span>
           </div>
           <span
-            class="_badge_1n78s_21"
+            class="_badge_fdi0z_21"
+            data-testid="badge"
           >
             0
           </span>
@@ -96,10 +102,11 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
         class="_menuButtonList_171v5_1"
       >
         <div
-          class="_orderButton_1n78s_1"
+          class="_menuButton_fdi0z_1"
+          data-testid="menuButton"
         >
           <div
-            class="_menu_1n78s_25"
+            class="_menu_fdi0z_1"
           >
             <span
               class=""
@@ -114,7 +121,8 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
             </span>
           </div>
           <span
-            class="_badge_1n78s_21"
+            class="_badge_fdi0z_21"
+            data-testid="badge"
           >
             0
           </span>
@@ -124,10 +132,11 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
         class="_menuButtonList_171v5_1"
       >
         <div
-          class="_orderButton_1n78s_1"
+          class="_menuButton_fdi0z_1"
+          data-testid="menuButton"
         >
           <div
-            class="_menu_1n78s_25"
+            class="_menu_fdi0z_1"
           >
             <span
               class=""
@@ -142,7 +151,8 @@ exports[`<App /> のスナップショットテスト > <App /> がレンダリ�
             </span>
           </div>
           <span
-            class="_badge_1n78s_21"
+            class="_badge_fdi0z_21"
+            data-testid="badge"
           >
             0
           </span>

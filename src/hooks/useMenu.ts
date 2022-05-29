@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { Menu } from '../lib/types/menu'
-import { menuData } from '../lib/mocks/menu-data'
 
 export const useMenu = (initialMenu: Menu[]) => {
-  const [menus, setMenus] = useState(menuData)
+  const [menus, setMenus] = useState(initialMenu)
   const updateMenus = (targetMenu: Menu) => {
     const updatedMenus = menus.map((menu) => {
       if (menu.id === targetMenu.id) {

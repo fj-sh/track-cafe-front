@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { Menu } from '../lib/types/menu'
 
+/**
+ * 初期メニューからメニューの状態を生成する。
+ * @param {Menu[]} initialMenu
+ * @return {Object} メニューのステート
+ */
 export const useMenu = (initialMenu: Menu[]) => {
   const [menus, setMenus] = useState(initialMenu)
   const updateMenus = (targetMenu: Menu) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu } from '../lib/types/menu'
-import OrderButton from './MenuButton'
+import MenuButton from './MenuButton'
 import style from './MenuButtonList.module.scss'
 
 type Props = {
@@ -9,12 +9,12 @@ type Props = {
 }
 
 const MenuButtonList = ({ menus, updateMenus }: Props) => {
-  if (!menus.length) return <div>メニューデータが存在しません。</div>
+  if (!menus.length) return <div data-testid="menuNotFound">メニューデータが存在しません。</div>
   return (
     <>
       {menus.map((menu) => (
         <div className={style.menuButtonList} key={`div-${menu.id}`}>
-          <OrderButton menu={menu} key={menu.id} updateMenus={updateMenus} />
+          <MenuButton menu={menu} key={menu.id} updateMenus={updateMenus} />
         </div>
       ))}
     </>

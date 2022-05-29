@@ -1,0 +1,30 @@
+// Vitest Snapshot v1
+
+exports[`MenuButton > 正しくレンダリングされること 1`] = `
+<div
+  class="_menuButton_fb0s5_1"
+  data-testid="menuButton"
+>
+  <div
+    class="_menu_fb0s5_1"
+  >
+    <span
+      class=""
+    >
+      コーヒー
+    </span>
+    <span
+      class=""
+    >
+      480
+       円
+    </span>
+  </div>
+  <span
+    class="_badge_fb0s5_22"
+    data-testid="badge"
+  >
+    0
+  </span>
+</div>
+`;

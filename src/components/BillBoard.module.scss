@@ -1,0 +1,22 @@
+.container {
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  width: 300px;
+  height: 180px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.title {
+  display: block;
+  text-align: start;
+  padding: 8px 0;
+  border-bottom: 2px solid #818080;
+  margin-bottom: 1rem;
+}
+
+.amount {
+  display: block;
+  text-align: start;
+  padding: 5px 0;
+}

@@ -13,7 +13,7 @@ const MenuButtonList = ({ menus, updateMenus }: Props) => {
   return (
     <>
       {menus.map((menu) => (
-        <div className={style.menuButtonList}>
+        <div className={style.menuButtonList} key={`div-${menu.id}`}>
           <OrderButton menu={menu} key={menu.id} updateMenus={updateMenus} />
         </div>
       ))}

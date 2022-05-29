@@ -2,11 +2,11 @@
 
 exports[`MenuButton > 正しくレンダリングされること 1`] = `
 <div
-  class="_menuButton_fdi0z_1"
+  class="_menuButton_fb0s5_1"
   data-testid="menuButton"
 >
   <div
-    class="_menu_fdi0z_1"
+    class="_menu_fb0s5_1"
   >
     <span
       class=""
@@ -21,7 +21,7 @@ exports[`MenuButton > 正しくレンダリングされること 1`] = `
     </span>
   </div>
   <span
-    class="_badge_fdi0z_21"
+    class="_badge_fb0s5_22"
     data-testid="badge"
   >
     0

@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
-
 import { menuData } from './lib/mocks/menu-data'
 import { Menu } from './lib/types/menu'
+import style from './App.module.scss'
 import TrackCafeLayout from './components/TrackCafeLayout'
 
-/**
- * React App
- * @constructor
- */
-function App() {
+const App = () => {
   const [menus, setMenus] = useState(menuData)
   const updateMenus = (targetMenu: Menu) => {
     const updatedMenus = menus.map((menu) => {
@@ -20,7 +16,7 @@ function App() {
     setMenus(updatedMenus)
   }
   return (
-    <div className="App">
+    <div className={style.container}>
       <TrackCafeLayout menus={menus} updateMenus={updateMenus} />
     </div>
   )

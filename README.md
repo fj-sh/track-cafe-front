@@ -26,4 +26,6 @@ npm run test
 
 ## テストのカバレッジを確認する
 
-Codecov を利用してテストのカバレッジを計測します。
+```console
+npm run coverage
+```
